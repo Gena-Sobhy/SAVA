@@ -1,0 +1,52 @@
+.hero {
+    display: flex;
+    border: 5px solid #FFF3E1;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 5rem ;
+    padding: 0;
+    margin-bottom: 2rem;
+    height: fit-content;
+}
+
+.hero_img img {
+    display: flex;
+    margin: 0;
+    width: 576px;
+    height: 100%;
+    object-fit: contain;
+}
+
+.hero_content h1 {
+    font-weight: normal;
+    font-size: 44px;
+    color: #FEF5E4;
+    font-family: 'Minion Pro', sans-serif;
+    margin-bottom: 0.5rem;
+}
+
+.hero_content img {
+    width: 217px;
+}
+
+.hero_content p {
+    font-family: 'Minion Pro', sans-serif;
+    margin: 2rem 0;
+    color: #FFFFFF;
+    text-align: justify;
+    padding-right: 5rem;
+}
+
+.hero_buttons {
+    display: flex;
+}
+
+.white {
+    display: flex;
+    margin-left: 2rem;
+    gap: 0.5rem;
+}
+
+.white img {
+    width: 24px;
+}

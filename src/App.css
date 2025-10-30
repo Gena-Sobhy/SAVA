@@ -1,0 +1,31 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+}
+
+.transparent {
+  background-color: transparent;
+  color: #D9D9D9;
+  padding: 0.25rem 1.75rem;
+  border: 2px solid #D9D9D9;
+  font-family: 'Script MT Bold', sans-serif;
+  font-size: 24px;
+}
+
+.white {
+  background-color: #FFFFFF;
+  color: black;
+  padding: 0.25rem 1.75rem;
+  font-family: 'Script MT Bold', sans-serif;
+  font-size: 24px;
+  border: 1px solid white;
+  align-items: center;
+  justify-content: center;
+}
