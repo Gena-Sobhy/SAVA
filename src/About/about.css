@@ -1,4 +1,40 @@
 .about {
-    margin: 1rem 5rem;
+    padding: 4rem 8rem;
+    display: flex;
     color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+.about_aboutus h2 {
+    display: flex;
+    justify-content: right;
+}
+
+p {
+    font-size: 16px;
+    margin: 1.5rem 0;
+    font-family: 'Minion Pro', sans-serif;
+    text-align: justify;
+}
+
+.about_aboutus-btn{
+    display: flex;
+    justify-content: right;
+}
+.about_aboutus-btn button {
+    margin: 0;
+}
+
+.about_img img {
+    width: 390px;
+    margin: 0 3rem;
+}
+
+.about_whyus-btn {
+    display: flex;
+    justify-content: left;
+}
+.about_whyus-btn button {
+    margin: 0;
 }

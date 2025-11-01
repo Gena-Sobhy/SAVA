@@ -1,0 +1,35 @@
+.reference {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    padding: 4rem 8rem;
+}
+
+.img-left, .img-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        img {
+            width: 78px;
+        }
+}
+
+.reference_content p {
+    font-size: 35px;
+    font-family: 'Minion Pro', sans-serif;
+    color: #FFF3E1;
+    letter-spacing: 2px;
+}
+
+.reference-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid #FFF3E1;
+    padding: 3rem;
+}
+
+.reference-image img {
+    width: 475px;
+}

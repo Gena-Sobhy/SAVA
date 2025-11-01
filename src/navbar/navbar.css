@@ -1,15 +1,17 @@
-
+/* add cursor to shooping cart */
+/* remove styling in inout */
+/* add the small line under Home */
 
 .navbar {
     background-color: black;
     padding: 2rem 4rem 1rem 4rem;
     display: flex;
-    gap: 6rem;
+    gap: 4.5rem;
     align-items: center;
     justify-content: center;
 }
 
-.navbar img {
+.navbar .logo {
     width: 139px;
 }
 
@@ -24,28 +26,6 @@
     text-decoration: none;
     font-family: 'Script MT Bold', sans-serif;
     font-size: 25px;
-}
-
-.navbar_search {
-    display: flex;
-    align-items: center;
-    background-color: rgba(166, 165, 165, 0.58);
-    border: 2px solid #FFF3E1;
-    padding: 0.25rem 0.5rem;
-}
-
-.navbar_search img {
-    width: 22px;
-    height: 22px;
-    margin-right: 0.5rem;
-}
-
-.navbar_search input {
-    padding: 0.5rem;
-    border: none;
-    background-color: transparent;
-    padding: 0;
-    width: 15rem;
 }
 
 .navbar_account {

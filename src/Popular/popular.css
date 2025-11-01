@@ -1,0 +1,24 @@
+.popular {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 6rem;
+}
+
+.popular p {
+    color: white;
+    font-family: 'Minion Pro', sans-serif;
+    font-size: 32px;
+    margin-bottom: 3rem;
+}
+
+.popular-grid {
+    display: flex;
+    gap: 2rem;
+}
+
+.popular-grid img {
+    width: 243px;
+    height: 315px;
+}

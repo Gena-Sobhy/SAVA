@@ -1,0 +1,30 @@
+.discover {
+    padding: 3rem 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+}
+
+.discover h2 {
+    margin: 1rem 0;
+}
+
+.discover-arrows_grid {
+    display: flex;
+}
+
+.discover-arrows_grid img {
+    width: 70px;
+}
+
+.discover-grid {
+    display: flex;
+    gap: 2rem;
+    margin: 2rem;
+}
+
+.discover-grid img {
+    width: 194px;
+    height: 247px;
+}

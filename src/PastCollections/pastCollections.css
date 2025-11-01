@@ -1,0 +1,64 @@
+.past-collections {
+    color: white;
+    background-image: url('../assets/Past-collections.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 4rem 8rem;
+    height: 792px;
+    font-family: 'Minion Pro', sans-serif;
+}
+
+.past-collections_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .pt2{
+        
+        text-align: right;
+        font-size: 40px;
+        color: #FFF5E1;
+    }
+
+    .p_pt1 {
+        color: #FEF5E4;
+        font-size: 32px;
+        width: 500px;
+    }
+    .p_pt2 {
+        font-size: 20px;
+        width: 250px;
+        text-align: right;
+    }
+}
+
+.past-collections_items {
+    display: flex;
+    flex-direction: column;
+
+    p.number{
+    margin: 0;
+    font-size: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+
+    p.text {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        width: 500px;
+        font-size: 28px;
+        cursor: pointer;
+    }
+    p.text:hover {
+        background-color: rgba(206, 169, 158, 0.68);
+        color: black;
+    }
+    p.text span {
+        font-size: 38px;
+        font-weight: bold;
+        margin: 0 2rem;
+    }
+}

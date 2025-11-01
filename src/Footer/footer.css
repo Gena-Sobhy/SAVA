@@ -1,0 +1,49 @@
+.footer {
+    background-color: #FFF8E1;
+    font-family: 'Minion Pro', sans-serif;
+    justify-content: center;
+}
+
+.footer-content {
+    display: flex;
+    padding: 4rem 17rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo {
+    width: 213px;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        width: 213px;
+    }
+    p {
+        font-size: 15px;
+        text-align: center;
+    }
+}
+
+h3 {
+    font-size: 32px;
+    color: #42141E;
+    font-family: 'Script MT Bold', sans-serif;
+    font-style: bold;
+    margin-bottom: 1rem;
+}
+li {
+    list-style: none;
+
+    a {
+        text-decoration: none;
+        color: black;
+        font-size: 24px;
+        line-height: 1.25;
+        list-style: none;
+    }
+}
+
+.footer-div {
+    border: #42141E 5px solid;
+}
