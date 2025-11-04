@@ -1,12 +1,8 @@
-/* add cursor to shooping cart */
-/* remove styling in inout */
-/* add the small line under Home */
-
 .navbar {
     background-color: black;
     padding: 2rem 4rem 1rem 4rem;
     display: flex;
-    gap: 4.5rem;
+    gap: 4rem;
     align-items: center;
     justify-content: center;
 }
@@ -16,16 +12,48 @@
 }
 
 .navbar_links {
+    position: relative;
+}
+
+.nav-list {
     display: flex;
     gap: 2rem;
-    list-style: none;
-    
 }
+
 .navbar_links a {
     color: white;
     text-decoration: none;
     font-family: 'Script MT Bold', sans-serif;
     font-size: 25px;
+    position: relative;
+    padding-bottom: 6px;
+    cursor: pointer;
+}
+
+.underline {
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    background-color: #CE9F9D;
+    transition: transform 0.3s ease, width 0.3s ease;
+    width: 60px;
+    transform: translateX(0);
+}
+
+.navbar_search {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.navbar_search input {
+    background: none;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    color: white;
+    font-size: 16px;
+    padding: 4px;
+    outline: none;
 }
 
 .navbar_account {
@@ -46,4 +74,5 @@
 .navbar_account img {
     width: 42px;
     height: 42px;
+    cursor: pointer;
 }

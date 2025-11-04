@@ -23,7 +23,7 @@ const App = () => {
       <NewCollection />
       <Reference />
       <Popular />
-      <PastCollections />
+      {/* <PastCollections /> */}
       <Footer />
     </div>
   )
