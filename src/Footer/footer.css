@@ -1,49 +1,104 @@
 .footer {
-    background-color: #FFF8E1;
-    font-family: 'Minion Pro', sans-serif;
-    justify-content: center;
+  background-color: #fff8e1;
+  font-family: "Minion Pro", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .footer-content {
-    display: flex;
-    padding: 4rem 17rem;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  padding: 4rem clamp(1.5rem, 10vw, 17rem);
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 3rem;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .footer-logo {
-    width: 213px;
-    justify-content: center;
-    align-items: center;
+  max-width: 213px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
-    img {
-        width: 213px;
-    }
-    p {
-        font-size: 15px;
-        text-align: center;
-    }
+  img {
+    width: 100%;
+    max-width: 213px;
+    height: auto;
+  }
+  p {
+    font-size: 15px;
+    text-align: center;
+    margin-top: 1rem;
+    color: black;
+  }
 }
 
 h3 {
-    font-size: 32px;
-    color: #42141E;
-    font-family: 'Script MT Bold', sans-serif;
-    font-style: bold;
-    margin-bottom: 1rem;
+  font-size: clamp(24px, 3vw, 32px);
+  color: #42141e;
+  font-family: "Script MT Bold", sans-serif;
+  font-weight: bold;
+  margin: 0 0 1rem 0;
 }
-li {
-    list-style: none;
 
-    a {
-        text-decoration: none;
-        color: black;
-        font-size: 24px;
-        line-height: 1.25;
-        list-style: none;
-    }
+li {
+  list-style: none;
+  margin-bottom: 0.5rem;
+
+  a {
+    text-decoration: none;
+    color: black;
+    font-size: clamp(18px, 2vw, 24px);
+    line-height: 1.25;
+  }
 }
 
 .footer-div {
-    border: #42141E 5px solid;
+  border: #42141e 5px solid;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.footer-links-container {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
+
+@media screen and (max-width: 992px) {
+  .footer-content {
+    padding: 4rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1.5rem 0 1.5rem;
+    gap: 1rem;
+  }
+
+  .footer-links-container {
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+    width: 60%;
+  }
+
+  .footer-logo {
+    max-width: 100%;
+  }
+
+  .footer-sava,
+  .footer-contact {
+    display: flex;
+    flex-direction: column;
+  }
 }

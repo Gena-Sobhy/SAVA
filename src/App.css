@@ -12,18 +12,18 @@
 
 .transparent {
   background-color: transparent;
-  color: #D9D9D9;
+  color: #d9d9d9;
   padding: 0.25rem 1.75rem;
-  border: 2px solid #D9D9D9;
-  font-family: 'Script MT Bold', sans-serif;
+  border: 2px solid #d9d9d9;
+  font-family: "Script MT Bold", sans-serif;
   font-size: 24px;
 }
 
 .white {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   color: black;
   padding: 0.25rem 1.75rem;
-  font-family: 'Script MT Bold', sans-serif;
+  font-family: "Script MT Bold", sans-serif;
   font-size: 24px;
   border: 1px solid white;
   align-items: center;
@@ -31,17 +31,17 @@
 }
 
 .h2 {
-  font-size: 60px;
+  font-size: (30px, 10vw, 60px);
   font-weight: bold;
-  font-family: 'Script MT Bold',sans-serif;
-  color: #CEA29E;
+  font-family: "Script MT Bold", sans-serif;
+  color: #cea29e;
 }
 
 .navbar_search {
   display: flex;
   align-items: center;
   background-color: rgba(166, 165, 165, 0.58);
-  border: 2px solid #FFF3E1;
+  border: 2px solid #fff3e1;
   padding: 0.25rem 0.5rem;
 }
 
@@ -62,7 +62,7 @@
 }
 
 .navbar_search input::placeholder {
-  color: #D9D9D9;
+  color: #d9d9d9;
   font-weight: bold;
   opacity: 0.6;
 }
@@ -70,42 +70,6 @@
 .navbar_search input:focus {
   outline: none;
   box-shadow: none;
-}
-
-.container {
-  padding: 3rem;
-  background-color: #42141E;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  p:first-child {
-    color: white;
-    margin: 0;
-    background-color: black;
-    padding: 3px;
-    font-family: 'Minion Pro', sans-serif;
-    font-size: 7px;
-    letter-spacing: 4px;
-    text-align: center;
-  }
-
-  img {
-    padding: none;
-    margin: 0;
-    display: flex;
-  }
-
-  p:last-child {
-    color: white;
-    margin: 0;
-    padding: 3px 5px;
-    font-family: 'Minion Pro', sans-serif;
-    font-size: 15px;
-    display: flex;
-    justify-content: space-between;
-    font-weight:500; 
-  }
 }
 
 header .nav-btn {

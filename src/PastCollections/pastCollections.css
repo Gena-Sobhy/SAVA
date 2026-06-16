@@ -1,64 +1,136 @@
 .past-collections {
-    color: white;
-    background-image: url('../assets/Past-collections.png');
-    background-size: 100%;
-    background-repeat: no-repeat;
-    padding: 4rem 8rem;
-    height: 792px;
-    font-family: 'Minion Pro', sans-serif;
+  color: white;
+  background-image: url("../assets/Past-collections.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: clamp(2rem, 5vw, 4rem) clamp(1.5rem, 8vw, 8rem);
+  min-height: 792px;
+  box-sizing: border-box;
+  font-family: "Minion Pro", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 3rem;
 }
 
 .past-collections_header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 2rem;
 
-    .pt2{
-        
-        text-align: right;
-        font-size: 40px;
-        color: #FFF5E1;
-    }
+  .pt2 {
+    text-align: right;
+    font-size: clamp(28px, 4vw, 40px);
+    color: #fff5e1;
+    margin: 0;
+  }
 
-    .p_pt1 {
-        color: #FEF5E4;
-        font-size: 32px;
-        width: 500px;
-    }
-    .p_pt2 {
-        font-size: 20px;
-        width: 250px;
-        text-align: right;
-    }
+  .p_pt1 {
+    color: #fef5e4;
+    font-size: clamp(18px, 2.5vw, 32px);
+    max-width: 500px;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .p_pt2 {
+    font-size: clamp(14px, 1.8vw, 20px);
+    max-width: 250px;
+    width: 100%;
+    text-align: right;
+    margin-top: 1rem;
+  }
 }
 
 .past-collections_items {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 
-    p.number{
+  p.number {
     margin: 0;
-    font-size: 48px;
+    font-size: clamp(24px, 4.5vw, 48px);
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 0.5rem 0;
+  }
+
+  p.text {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    max-width: 500px;
+    width: 100%;
+    font-size: clamp(16px, 2.5vw, 28px);
+    cursor: pointer;
+    margin: 0;
+    padding: 0.5rem 0;
+    transition:
+      background-color 0.2s ease,
+      color 0.2s ease;
+  }
+
+  p.text:hover {
+    background-color: rgba(206, 169, 158, 0.68);
+    color: black;
+  }
+
+  p.text span {
+    font-size: clamp(20px, 3.5vw, 38px);
+    font-weight: bold;
+    margin: 0 clamp(0.5rem, 2vw, 2rem);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .past-collections {
+    min-height: auto;
+  }
+
+  .past-collections_header {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1.5rem;
+
+    .pt2 {
+        font-size: 20px;
     }
 
-    p.text {
-        display: flex;
-        align-items: center;
-        justify-content: start;
-        width: 500px;
-        font-size: 28px;
-        cursor: pointer;
-    }
-    p.text:hover {
-        background-color: rgba(206, 169, 158, 0.68);
-        color: black;
-    }
-    p.text span {
-        font-size: 38px;
-        font-weight: bold;
-        margin: 0 2rem;
-    }
+      .p_pt1,
+     .p_pt2 {
+        text-align: left;
+        margin: 0.5rem 0;
+     }
+     
+  }
+
+  .past-collections_header-pt2 .pt2,
+  .past-collections_header-pt2 .p_pt2 {
+    text-align: left;
+  }
+
+  .past-collections_header-pt1 .p_pt1,
+  .past-collections_header-pt2 .p_pt2 {
+    max-width: 100%;
+  }
+
+  .past-collections_items p.number {
+    align-items: flex-start;
+    gap: 0.5rem;
+    padding: 1rem 0;
+  }
+
+  .past-collections_items p.text {
+    max-width: 100%;
+    padding: 0.5rem;
+  }
+
+  .past-collections_items p.text span {
+    margin-left: 0.5rem;
+    margin-right: 1rem;
+  }
 }

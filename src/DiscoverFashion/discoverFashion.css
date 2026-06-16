@@ -1,25 +1,64 @@
 .discover-fashion {
-    background-color: hsl(347, 53%, 17%);
-    padding: 3rem 8rem ;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  background-color: hsl(347, 53%, 17%);
+  padding: 3rem 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .discover-fashion h2 {
-    color: #FFF3E1;
-    text-align: center;
+  color: #fff3e1;
+  text-align: center;
+  font-size: 40px;
 }
 
 .discover-fashion p {
-    font-size: 16px;
-    font-family: 'Minion Pro', sans-serif;
-    font-weight: 200;
-    color: white;
-    text-align: center;
+  font-size: 16px;
+  font-family: "Minion Pro", sans-serif;
+  font-weight: 200;
+  color: white;
+  text-align: justify;
+  text-align-last: center;
 }
 
 .discover-fashion button {
-    color: hsl(347, 53%, 17%);
+  color: hsl(347, 53%, 17%);
+}
+
+@media screen and (max-width: 1024px) {
+  .discover-fashion {
+    padding: 3rem 4rem;
+    text-align: justify;
+  }
+
+  .discover-fashion h2 {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .discover-fashion {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .discover-fashion h2 {
+    font-size: 26px;
+  }
+
+  .discover-fashion p {
+    font-size: 14px;
+  }
+
+  .discover-fashion h2 br {
+    display: none;
+  }
+}
+
+.toggle-text-btn {
+  color: #fff3e1;
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: 5px;
+  text-decoration: underline;
 }

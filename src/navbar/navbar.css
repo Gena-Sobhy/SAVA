@@ -1,79 +1,209 @@
+/*  Base Styles  */
 .navbar {
-    background-color: black;
-    padding: 2rem 4rem 1rem 4rem;
-    display: flex;
-    gap: 4rem;
-    align-items: center;
-    justify-content: center;
+  background-color: black;
+  padding: 1.5rem 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav_logo {
+  width: 25%;
 }
 
 .navbar .logo {
-    width: 139px;
+  width: 139px;
+  display: block;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .navbar_links {
-    position: relative;
+  position: relative;
 }
 
 .nav-list {
-    display: flex;
-    gap: 2rem;
+  display: flex;
+  gap: 2rem;
 }
 
 .navbar_links a {
-    color: white;
-    text-decoration: none;
-    font-family: 'Script MT Bold', sans-serif;
-    font-size: 25px;
-    position: relative;
-    padding-bottom: 6px;
-    cursor: pointer;
+  color: white;
+  text-decoration: none;
+  font-family: "Script MT Bold", sans-serif;
+  font-size: 25px;
+  position: relative;
+  padding-bottom: 6px;
+  cursor: pointer;
 }
 
 .underline {
-    position: absolute;
-    bottom: 0;
-    height: 2px;
-    background-color: #CE9F9D;
-    transition: transform 0.3s ease, width 0.3s ease;
-    width: 60px;
-    transform: translateX(0);
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  background-color: #ce9f9d;
+  transition:
+    transform 0.3s ease,
+    width 0.3s ease;
+  width: 0;
+  transform: translateX(0);
 }
 
 .navbar_search {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .navbar_search input {
-    background: none;
-    border: none;
-    border-bottom: 1px solid #ccc;
-    color: white;
-    font-size: 16px;
-    padding: 4px;
-    outline: none;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  color: white;
+  font-size: 16px;
+  padding: 4px;
+  outline: none;
+}
+
+.navbar_search-responsive {
+  display: none;
+  padding: 8px;
+  border: #d9d9d9 solid 2px;
+  border-radius: 50px;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar_search-responsive img {
+  width: 17px;
+  height: 17px;
+  cursor: pointer;
 }
 
 .navbar_account {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
 }
 
 .navbar_account button {
-    font-family: 'Script MT Bold', sans-serif;
-    font-size: 24px;
-    padding: 0.1rem 1.12rem;
-    border: #D9D9D9 2px solid;
-    background-color: #42141E;
-    color: #D9D9D9;
-    cursor: pointer;
+  font-family: "Script MT Bold", sans-serif;
+  font-size: 24px;
+  padding: 0.2rem 1.2rem;
+  border: #d9d9d9 2px solid;
+  background-color: #42141e;
+  color: #d9d9d9;
+  cursor: pointer;
 }
 
 .navbar_account img {
-    width: 42px;
-    height: 42px;
+  width: 42px;
+  height: 42px;
+  cursor: pointer;
+}
+
+.app__navbar-smallscreen {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .navbar {
+    padding: 1.5rem 2rem;
+  }
+
+  .navbar_links,
+  .navbar_search {
+    display: none;
+  }
+
+  .nav-container {
+    justify-content: end;
+    gap: 2rem;
+  }
+
+  .navbar_account button {
+    gap: 1rem;
+  }
+
+  .navbar_search-responsive {
+    display: flex;
+  }
+
+  .app__navbar-smallscreen {
+    display: flex;
+    align-items: center;
+  }
+
+  .app__navbar-smallscreen_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.95);
+    z-index: 50;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease;
+  }
+
+  .overlay__close {
+    font-size: 27px;
+    color: #fff;
     cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  .app__navbar-smallscreen_links {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+  }
+
+  .app__navbar-smallscreen_links li {
+    margin: 2rem 0;
+  }
+
+  .app__navbar-smallscreen_links a {
+    color: white;
+    font-size: 2rem;
+    font-family: "Script MT Bold", sans-serif;
+    text-decoration: none;
+    transition: 0.3s ease;
+  }
+
+  .app__navbar-smallscreen_links a:hover {
+    color: #ce9f9d;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .navbar .logo {
+    width: 110px;
+  }
+
+  .nav-container {
+    justify-content: end;
+    gap: 0.5rem;
+  }
+
+  .navbar_account button {
+    gap: 0;
+    display: none;
+  }
+
+  .navbar_account img {
+    width: 35px;
+    height: 35px;
+  }
 }
